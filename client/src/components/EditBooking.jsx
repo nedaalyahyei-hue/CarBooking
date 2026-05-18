@@ -18,7 +18,7 @@ const EditBooking = () => {
   useEffect(() => {
     const getCars = async () => {
       try {
-        const response = await axios.get("http://localhost:3002/getCars");
+        const response = await axios.get("https://carbooking-k5an.onrender.com/getCars");
         setCars(response.data.cars);
           }
       catch (error) {
