@@ -15,7 +15,7 @@ export const saveBooking=createAsyncThunk(
     async(bookingData)=>{
         try{
             const response=await axios.post(
-                "http://localhost:3002/saveBooking",
+                "https://carbooking-k5an.onrender.com/saveBooking",
                 bookingData
             );
 
@@ -32,7 +32,7 @@ export const getBookings=createAsyncThunk(
     async(email)=>{
         try{
             const response=await axios.get(
-                `http://localhost:3002/getBookings/${email}`
+                `https://carbooking-k5an.onrender.com/getBookings/${email}`
             );
 
             return response.data.bookings;
@@ -48,7 +48,7 @@ export const delBooking=createAsyncThunk(
     async(bookingid)=>{
         try{
             await axios.delete(
-                `http://localhost:3002/delBooking/${bookingid}`
+                `https://carbooking-k5an.onrender.com/delBooking/${bookingid}`
             );
 
             return bookingid;
@@ -64,7 +64,7 @@ export const updBooking=createAsyncThunk(
     async(bookingData)=>{
         try{
             const response=await axios.put(
-                "http://localhost:3002/updBooking",
+                "https://carbooking-k5an.onrender.com/updBooking",
                 bookingData
             );
 
