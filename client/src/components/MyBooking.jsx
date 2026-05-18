@@ -53,7 +53,7 @@ const MyBookings = () => {
                                 </Link>
 
                                 <button className="deleteBtn"
-                                    onClick={() => deleteBooking(booking._id)}> Delete</button>
+                                    onClick={() => deleteBooking(booking._id)}> Delete MSG</button>
 
                             </div>
                         </div>
